@@ -27,6 +27,12 @@ Here is a code sample from Java interacting with _termios.h_ on the [JVM through
 It appears that the library needed to interop with windows terminals is _msvcrt.dll_, based on the previously mentioned
 [Java snippet](https://www.source-code.biz/snippets/java/RawConsoleInput/RawConsoleInput.java) that works from the JVM.
 
+We might also be able to use this:
+[Windows Console Documentation](https://learn.microsoft.com/en-us/windows/console/classic-vs-vt)
+[Inside the windows console](https://devblogs.microsoft.com/commandline/windows-command-line-inside-the-windows-console/)
+
+There are some APIs in [Scala Native](https://github.com/scala-native/scala-native/blob/main/windowslib/src/main/resources/scala-native/windows/console.c), they seem incomplete:
+
 ### JavaScript
 
 For _Scala.js_ interop, there is a node library for interacting with a console: https://nodejs.org/api/tty.html
